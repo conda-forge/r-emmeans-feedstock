@@ -14,14 +14,16 @@ Summary: Obtain estimated marginal means (EMMs) for many linear, generalized  li
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-emmeans-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-emmeans-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-emmeans-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-emmeans-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-emmeans-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-emmeans-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-emmeans-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-emmeans-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-emmeans-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-emmeans-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-emmeans-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-emmeans-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-emmeans/badges/version.svg)](https://anaconda.org/conda-forge/r-emmeans)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-emmeans/badges/downloads.svg)](https://anaconda.org/conda-forge/r-emmeans)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--emmeans-green.svg)](https://anaconda.org/conda-forge/r-emmeans) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-emmeans.svg)](https://anaconda.org/conda-forge/r-emmeans) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-emmeans.svg)](https://anaconda.org/conda-forge/r-emmeans) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-emmeans.svg)](https://anaconda.org/conda-forge/r-emmeans) |
 
 Installing r-emmeans
 ====================
