@@ -16,7 +16,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [win32]
+  # dependency r-brms not available on win64
+  skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,6 +25,7 @@ build:
 requirements:
   build:
     - r-base
+    - r-brms
     - r-coda >=0.17
     - r-estimability >=1.3
     - r-ggplot2
@@ -35,6 +37,7 @@ requirements:
 
   run:
     - r-base
+    - r-brms
     - r-coda >=0.17
     - r-estimability >=1.3
     - r-ggplot2
