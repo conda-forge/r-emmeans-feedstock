@@ -1,4 +1,4 @@
-{% set version = "1.2" %}
+{% set version = "1.2.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/emmeans_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: 34598b4c1d48df4182596c6ff3cce5174905e4c90a362cc5cbfb049593c8063c
+  sha256: 75cb8670d012066c16c1260e3491f05beb08aa48ab4adfac2c25885116a1a166
 
 build:
   number: 0
