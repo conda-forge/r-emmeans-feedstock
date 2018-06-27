@@ -7,7 +7,7 @@ Package license: GPL-2 | GPL-3
 
 Feedstock license: BSD 3-Clause
 
-Summary: Obtain estimated marginal means (EMMs) for many linear, generalized  linear, and mixed models. Compute contrasts or linear functions of EMMs, trends, and comparisons of slopes. Plots and compact letter displays. Least-squares means are discussed, and the term "estimated marginal means" is suggested, in Searle, Speed, and Milliken (1980) Population marginal means in the linear model: An alternative to least squares means, The American Statistician 34(4), 216-221 <doi:10.1080/00031305.1980.10483031>.
+Summary: Obtain estimated marginal means (EMMs) for many linear, generalized  linear, and mixed models. Compute contrasts or linear functions of EMMs, trends, and comparisons of slopes. Plots and compact letter displays. Least-squares means are discussed, and the term "estimated marginal means" is suggested, in Searle, Speed, and Milliken (1980) Population marginal means  in the linear model: An alternative to least squares means, The American  Statistician 34(4), 216-221 <doi:10.1080/00031305.1980.10483031>.
 
 
 
@@ -16,7 +16,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-emmeans-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-emmeans-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/r-emmeans-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-emmeans-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-emmeans-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-emmeans-feedstock/branch/master)
 
 Current release info
 ====================
