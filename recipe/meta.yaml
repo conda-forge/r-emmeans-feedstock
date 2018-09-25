@@ -1,4 +1,4 @@
-{% set version = '1.2.2' %}
+{% set version = '1.2.4' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: 8da396f3996ebbbff2b588afa79733bacef58be1d75988de730e3373697879c7
+  sha256: cfd0fa923ddc296cd24754b44225d393367e05c0831d49a46e17f2b41755e605
 
 build:
   merge_build_host: True  # [win]
@@ -23,6 +23,7 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-estimability >=1.3
@@ -61,3 +62,4 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
