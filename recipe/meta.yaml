@@ -14,9 +14,9 @@ source:
   sha256: cfd0fa923ddc296cd24754b44225d393367e05c0831d49a46e17f2b41755e605
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -52,8 +52,7 @@ about:
     (1980) Population marginal means  in the linear model: An alternative to least squares
     means, The American  Statistician 34(4), 216-221 <doi:10.1080/00031305.1980.10483031>.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
