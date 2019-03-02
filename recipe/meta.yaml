@@ -1,4 +1,4 @@
-{% set version = '1.3.2' %}
+{% set version = '1.3.3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: c52d24bb8d1954024a14ba1f38673a7d71660bed4f12cc0230b93a7800f0e655
+  sha256: 937ec81dfe67c1960c900a5a47b77c15bc1691182eededdefe3e3f8377a0eac2
 
 build:
   merge_build_host: True  # [win]
@@ -27,12 +27,14 @@ requirements:
     - r-base
     - r-estimability >=1.3
     - r-mvtnorm
+    - r-numderiv
     - r-plyr
     - r-xtable >=1.8_2
   run:
     - r-base
     - r-estimability >=1.3
     - r-mvtnorm
+    - r-numderiv
     - r-plyr
     - r-xtable >=1.8_2
 
@@ -60,13 +62,13 @@ extra:
 # Package: emmeans
 # Type: Package
 # Title: Estimated Marginal Means, aka Least-Squares Means
-# Version: 1.3.2
-# Date: 2019-01-23
+# Version: 1.3.3
+# Date: 2019-03-02
 # Authors@R: c(person("Russell", "Lenth", role = c("aut", "cre", "cph"),  email = "russell-lenth@uiowa.edu"), person("Henrik", "Singmann", role = "ctb"), person("Jonathon", "Love", role = "ctb"), person("Paul", "Buerkner", role = "ctb"), person("Maxime", "Herve", role = "ctb"))
 # Depends: R (>= 3.2)
-# Imports: estimability (>= 1.3), graphics, methods, stats, utils, plyr, mvtnorm, xtable (>= 1.8-2)
-# Suggests: bayesplot, biglm, brms, car, coda (>= 0.17), ggplot2, lattice, mediation, mgcv, multcomp, multcompView, nlme, ordinal (>= 2014.11-12), pbkrtest (>= 0.4-1), lme4, lmerTest (>= 2.0.32), MASS, rsm, knitr, rmarkdown, testthat
-# Enhances: CARBayes, coxme, gee, geepack, MCMCglmm, MCMCpack, nnet, pscl, rstanarm, survival
+# Imports: estimability (>= 1.3), graphics, methods, numDeriv, stats, utils, plyr, mvtnorm, xtable (>= 1.8-2)
+# Suggests: bayesplot, biglm, brms, car, coda (>= 0.17), ggplot2, lattice, mediation, mgcv, multcomp, multcompView, nlme, ordinal (>= 2014.11-12), pbkrtest (>= 0.4-1), lme4, lmerTest (>= 2.0.32), MASS, MuMIn, rsm, knitr, rmarkdown, testthat
+# Enhances: CARBayes, coxme, gee, geepack, MCMCglmm, MCMCpack, mice, nnet, pscl, rstanarm, sommer, survival
 # URL: https://github.com/rvlenth/emmeans
 # BugReports: https://github.com/rvlenth/emmeans/issues
 # LazyData: yes
@@ -77,8 +79,8 @@ extra:
 # RoxygenNote: 6.1.1
 # VignetteBuilder: knitr
 # NeedsCompilation: no
-# Packaged: 2019-01-22 20:33:24 UTC; rlenth
+# Packaged: 2019-03-02 14:27:06 UTC; rlenth
 # Author: Russell Lenth [aut, cre, cph], Henrik Singmann [ctb], Jonathon Love [ctb], Paul Buerkner [ctb], Maxime Herve [ctb]
 # Maintainer: Russell Lenth <russell-lenth@uiowa.edu>
 # Repository: CRAN
-# Date/Publication: 2019-01-22 22:50:04 UTC
+# Date/Publication: 2019-03-02 15:20:03 UTC
