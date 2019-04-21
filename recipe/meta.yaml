@@ -1,4 +1,4 @@
-{% set version = '1.3.3' %}
+{% set version = "1.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: 937ec81dfe67c1960c900a5a47b77c15bc1691182eededdefe3e3f8377a0eac2
+  sha256: 16f71cb68a95d7a121236b8d1c5682917c56dec44d424a7c0986916115bcfd25
 
 build:
   merge_build_host: True  # [win]
