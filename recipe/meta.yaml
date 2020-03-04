@@ -1,4 +1,4 @@
-{% set version = "1.4.4" %}
+{% set version = "1.4.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: 3d909642c5ca81f2760f89ef22926bc290f3fdb90720b9f066d59181ba913850
+  sha256: b51efef476da09bd66a29c1af9313a67ffcc6b410c421496c9f2136c5addd581
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -46,16 +46,13 @@ test:
 about:
   home: https://github.com/rvlenth/emmeans
   license: GPL-2 | GPL-3
-  summary: 'Obtain estimated marginal means (EMMs) for many linear, generalized  linear, and
-    mixed models. Compute contrasts or linear functions of EMMs, trends, and comparisons
-    of slopes. Plots and other displays. Least-squares means are discussed, and the
-    term "estimated marginal means" is suggested, in Searle, Speed, and Milliken (1980)
-    Population marginal means  in the linear model: An alternative to least squares
-    means, The American  Statistician 34(4), 216-221 <doi:10.1080/00031305.1980.10483031>.'
+  summary: 'Obtain estimated marginal means (EMMs) for many linear, generalized  linear, and mixed models. Compute contrasts or linear functions of EMMs, trends,
+    and comparisons of slopes. Plots and other displays. Least-squares means are discussed, and the term "estimated marginal means" is suggested, in Searle, Speed,
+    and Milliken (1980) Population marginal means  in the linear model: An alternative to least squares means, The American  Statistician 34(4), 216-221 <doi:10.1080/00031305.1980.10483031>.'
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
