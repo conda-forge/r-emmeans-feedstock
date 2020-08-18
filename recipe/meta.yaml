@@ -1,4 +1,4 @@
-{% set version = "1.4.8" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: b3608bff08b38b0a99f80d663aefe5a2ce9f7cf959df02011fe046462c260841
+  sha256: d3303108c73a348d40f3616821c48a1a35feac9ca481f931d77addaf14b9ca26
 
 build:
   merge_build_host: true  # [win]
@@ -45,7 +45,7 @@ test:
 
 about:
   home: https://github.com/rvlenth/emmeans
-  license: GPL-2 | GPL-3
+  license: GPL-2.0-or-later
   summary: 'Obtain estimated marginal means (EMMs) for many linear, generalized  linear, and mixed models. Compute contrasts or linear functions of EMMs, trends, and comparisons of slopes. Plots and other displays. Least-squares means are discussed, and the term "estimated marginal means" is suggested, in Searle, Speed,
     and Milliken (1980) Population marginal means  in the linear model: An alternative to least squares means, The American  Statistician 34(4), 216-221 <doi:10.1080/00031305.1980.10483031>.'
   license_family: GPL3
