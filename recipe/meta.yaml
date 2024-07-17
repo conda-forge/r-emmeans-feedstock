@@ -1,6 +1,5 @@
 {% set version = "1.10.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-emmeans
@@ -13,8 +12,7 @@ source:
   sha256: 7b2a307d9588425882f8530a0e2b5ddfaf2105757e26428b73999ab126688205
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
