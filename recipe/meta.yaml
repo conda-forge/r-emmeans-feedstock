@@ -27,13 +27,13 @@ requirements:
     - r-estimability >=1.4.1
     - r-mvtnorm
     - r-numderiv
-    - r-xtable >=1.8_2
+    - r-rlang
   run:
     - r-base
     - r-estimability >=1.4.1
     - r-mvtnorm
     - r-numderiv
-    - r-xtable >=1.8_2
+    - r-rlang
 
 test:
   commands:
