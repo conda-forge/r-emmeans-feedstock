@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emmeans/emmeans_{{ version }}.tar.gz
-  sha256: bfae3c8beadea9e2cd62f816a5b20888a29bb000dd85f37f77beb5a9271729ae
+  sha256: 5da4b75d85bd1551e7547b0b39abfc220fc9fcb5ad400e9d58cdfdaa35b428cd
 
 build:
   number: 0
